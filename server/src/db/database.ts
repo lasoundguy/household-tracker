@@ -1,7 +1,16 @@
 import Database from 'better-sqlite3';
 import path from 'path';
+import fs from 'fs';
 
 const dbPath = process.env.DATABASE_URL || path.join(__dirname, '../../database.sqlite');
+
+// Ensure the directory exists before creating the database
+const dbDir = path.dirname(dbPath);
+if (!fs.existsSync(dbDir)) {
+  fs.mkdirSync(dbDir, { recursive: true });
+  console.log(`Created database directory: ${dbDir}`);
+}
+
 const db = new Database(dbPath);
 
 // Enable foreign keys
