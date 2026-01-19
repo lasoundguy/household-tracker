@@ -1,6 +1,6 @@
 # Household Tracker
 
-A web application for tracking household objects across different locations.
+A web application for tracking household objects across different locations.  Also an experiment in Claude Code capabilities.
 
 ## Features
 
