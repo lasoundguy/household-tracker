@@ -35,10 +35,10 @@ This guide walks you through deploying your Household Tracker app using web dash
 ```
 PORT=5000
 DATABASE_URL=/app/data/database.sqlite
-JWT_SECRET=household-tracker-super-secret-jwt-key-for-production-change-this
-CLOUDINARY_CLOUD_NAME=debxmyv8k
-CLOUDINARY_API_KEY=911666822237649
-CLOUDINARY_API_SECRET=udz8-55nQSJFffeNwFNzqe9zLxU
+JWT_SECRET=your-super-secret-jwt-key-minimum-32-characters-change-this
+CLOUDINARY_CLOUD_NAME=your-cloudinary-cloud-name
+CLOUDINARY_API_KEY=your-cloudinary-api-key
+CLOUDINARY_API_SECRET=your-cloudinary-api-secret
 NODE_ENV=production
 CLIENT_URL=https://your-app-name.vercel.app
 ```
@@ -46,7 +46,7 @@ CLIENT_URL=https://your-app-name.vercel.app
 **Important Notes:**
 - `CLIENT_URL` - You'll update this after deploying the frontend
 - `JWT_SECRET` - Change this to a random 32+ character string for production
-- The Cloudinary credentials are already your actual credentials
+- Get Cloudinary credentials from https://cloudinary.com/console
 
 ### Step 5: Add Volume for Database Persistence
 1. Go to "Settings" tab
