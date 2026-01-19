@@ -1,0 +1,37 @@
+.locations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.location-card h3 {
+  color: #1F2937;
+  margin-bottom: 10px;
+}
+
+.location-card p {
+  color: #6B7280;
+  margin-bottom: 10px;
+}
+
+.location-address {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.location-count {
+  font-weight: 500;
+  color: #3B82F6;
+}
+
+.location-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.location-actions .btn {
+  flex: 1;
+  font-size: 13px;
+  padding: 8px 12px;
+}

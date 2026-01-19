@@ -1,0 +1,38 @@
+{
+  "name": "household-tracker-server",
+  "version": "1.0.0",
+  "description": "Backend API for household object tracking",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "nodemon src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "db:migrate": "node src/db/migrate.js"
+  },
+  "keywords": ["household", "tracker", "inventory"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "better-sqlite3": "^11.8.1",
+    "multer": "^2.0.2",
+    "cloudinary": "^2.5.1",
+    "express-validator": "^7.2.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/cors": "^2.8.17",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/multer": "^1.4.12",
+    "@types/node": "^22.10.5",
+    "typescript": "^5.7.3",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2"
+  }
+}

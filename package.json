@@ -1,0 +1,17 @@
+{
+  "name": "household-tracker",
+  "version": "1.0.0",
+  "description": "Track household objects across different locations",
+  "scripts": {
+    "install-all": "cd server && npm install && cd ../client && npm install",
+    "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm start\"",
+    "build": "cd server && npm run build && cd ../client && npm run build",
+    "start": "cd server && npm start"
+  },
+  "keywords": ["household", "tracker", "inventory"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
